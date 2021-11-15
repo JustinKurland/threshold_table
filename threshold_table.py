@@ -167,12 +167,12 @@ def threshold_table(model,
     # Change Column Order
     final = final[['Rank', 'Threshold', 'TN Count','TN %', 'TN Value', 'FN Count', 'FN %', 'FN Value', 'FP Count', 'FP %', 'FP Value', 'TP Count', 'TP %','TP Value','Model Value']]
     
-    # Outputs Decile Threshold Table
+    # Outputs Threshold Table as Pandas Dataframe
     if output_type=="pandas_dataframe":
 
          return final
     
-    # Outputs Decile Threshold Confusion Plot
+    # Outputs Threshold Table as Pandas Style Object
     if output_type=="pandas_style":
     
         # Color Mapping for Table 
